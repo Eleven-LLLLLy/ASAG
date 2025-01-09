@@ -1,0 +1,722 @@
+[
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "balance of focus"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argumentation",
+            "personal touch"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "personal experience",
+            "specific examples"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "logical structure",
+            "specificity of examples"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "expression",
+            "examples"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "personal example",
+            "clarity of argument"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "originality",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specificity of arguments",
+            "organization and structure"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "argument structure",
+            "balance of focus"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "personal touch"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "specificity",
+            "personal experience",
+            "depth of content"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "specificity"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "perspective",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "originality",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "clarity",
+            "depth of content",
+            "logical structure"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "clarity",
+            "organization",
+            "depth of content"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "organization and structure",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "organization and coherence",
+            "depth of content",
+            "specificity of examples"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "clarity of argument",
+            "personal experience",
+            "depth of analysis"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "relevance to real-world experience"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "coherence",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "clarity",
+            "depth of content",
+            "argumentation"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "relevance to the topic",
+            "personal examples"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specific examples",
+            "structure"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "organization",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specific examples",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "specificity",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specific examples",
+            "clarity of argument"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "expression",
+            "logic"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "expression",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specificity",
+            "personal reflection"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "specificity"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "specific examples",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "organization and structure",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specific examples",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "personalization",
+            "relevance to the target audience"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "deep of content",
+            "expression",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization and structure",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "coherence",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "specific examples",
+            "depth of content",
+            "personal reflection"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "relevance to topic"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "comprehensive argumentation",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "coherence",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "relevance to the topic",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization and structure",
+            "specific examples"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "specificity of experience",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "structure",
+            "argumentation"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "deep of content",
+            "logic",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "structure and coherence"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "relevance to topic"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "argumentation",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "specific examples",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "structure and coherence",
+            "use of examples"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "logic",
+            "specificity"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "organization and structure",
+            "relevance of arguments"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "logic",
+            "specificity"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "structure",
+            "relevance to the topic"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "relevance to the audience",
+            "structure"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "relevance to the topic",
+            "logical structure"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "logical structure",
+            "relevance to the topic"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "relevance to the prompt"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "specificity",
+            "depth of analysis",
+            "personal example"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "examples and support"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "structure"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "expression",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "specificity",
+            "personal experience",
+            "depth of reflection"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "specificity of examples",
+            "structure and coherence"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "expression",
+            "relevance to the topic"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "clarity of argument",
+            "organization"
+        ]
+    },
+    {
+        "better_answer": "answer 1",
+        "criteria": [
+            "logic",
+            "depth of content",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "coherence",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "structure and coherence",
+            "expression"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "specific examples",
+            "personal experience",
+            "depth of reflection"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "organization",
+            "specific examples"
+        ]
+    },
+    {
+        "better_answer": "answer 2",
+        "criteria": [
+            "depth of content",
+            "logical flow",
+            "expression"
+        ]
+    }
+]
