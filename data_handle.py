@@ -209,6 +209,8 @@ import ast
 import json
 import re
 
+import numpy as np
+
 
 def load_formatted_answers(input_file='formatted_answers.txt'):
     """从文件中读取格式化的答案并返回为列表"""
@@ -221,6 +223,16 @@ def load_formatted_answers(input_file='formatted_answers.txt'):
     except Exception as e:
         print(f"读取文件时出错: {e}")
         return []
+def matrix_trans(pair_data):
+
+
+    # 转化为矩阵形式
+    rows = 10  # 答案对的数量
+    cols = len(pair_data) // rows  # 每行的列数
+    matrix = np.array(pair_data).reshape(rows, cols)
+
+    print("矩阵形式：")
+    print(matrix)
 def parse_json(model_output):
     if type(model_output) is dict:
         return model_output
