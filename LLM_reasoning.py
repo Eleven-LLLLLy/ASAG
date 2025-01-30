@@ -101,14 +101,15 @@ def compare_answers_with_llm(pair_data,top_criteria, model_name, output_file):
     n = len(pair_data)
     k = len(top_criteria)
     A_kij = np.zeros((k, n, n), dtype=int)  # 初始化 A_kij 矩阵
-
     for k_idx, criterion in enumerate(tqdm(top_criteria, desc="Processing criteria")):
         for i in range(n):
+            temp=0
             for j in range(n):
-                if i ==j:
+                if i == j:
                     continue
-
-                system_prompt = generate_comparison_prompt(criterion,pair_data[j])
+                else:
+                    system_prompt = generate_comparison_prompt(criterion,pair_data[temp])
+                    temp+=1
 
                 # 准备输入
                 messages = [

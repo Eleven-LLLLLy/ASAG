@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import json
 from tqdm import tqdm
-from transformers import AutoModelForCausalLM, AutoTokenizer
+# from transformers import AutoModelForCausalLM, AutoTokenizer
 from LLM_reasoning import rank_criteria_with_llm,compare_answers_with_llm
 from data_handle import load_criteria_from_json,load_top_criteria
 from data_handle import load_formatted_answers
@@ -63,7 +63,6 @@ system_prompt_rank = (
 
 #Get Data
 pair_data=load_formatted_answers()
-matrix_trans(pair_data)
 criteria_list = load_criteria_from_json(json_file)
 criteria_top_list=load_top_criteria()
 
