@@ -103,13 +103,13 @@ def compare_answers_with_llm(pair_data,top_criteria, model_name, output_file):
     A_kij = np.zeros((k, n, n), dtype=int)  # 初始化 A_kij 矩阵
     for k_idx, criterion in enumerate(tqdm(top_criteria, desc="Processing criteria")):
         for i in range(n):
-            temp=0
+            temp = 0
             for j in range(n):
                 if i == j:
                     continue
                 else:
-                    system_prompt = generate_comparison_prompt(criterion,pair_data[temp])
-                    temp+=1
+                    system_prompt = generate_comparison_prompt(criterion, pair_data[temp])
+                    temp += 1
 
                 # 准备输入
                 messages = [
@@ -129,15 +129,17 @@ def compare_answers_with_llm(pair_data,top_criteria, model_name, output_file):
                     max_new_tokens=512,
                 )
                 generated_text = tokenizer.batch_decode(generated_ids, skip_special_tokens=True)[0]
-
                 # 解析输出
                 try:
-                    result = int(generated_text.strip())
+                    last_line = generated_text.splitlines()[-1]
+                    result = int(last_line)
+                    print(result)
                     A_kij[k_idx, i, j] = result
                     A_kij[k_idx, j, i] = -result  # 对称性
                 except ValueError:
                     print(
                         f"Unexpected output for criterion '{criterion}' between answers {i} and {j}: {generated_text}")
+
 
     np.save(output_file, A_kij)
     print(f"Matrix saved to {output_file}")
