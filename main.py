@@ -4,9 +4,8 @@ import json
 from tqdm import tqdm
 # from transformers import AutoModelForCausalLM, AutoTokenizer
 from LLM_reasoning import rank_criteria_with_llm,compare_answers_with_llm
-from data_handle import load_criteria_from_json,load_top_criteria
-from data_handle import load_formatted_answers
-from data_handle import matrix_trans
+from data_handle import *
+import numpy as np
 # File paths and configuration
 json_file = 'data.json'
 model_name = "/home/linshiyi/.cache/modelscope/hub/ZhipuAI/glm-4-9b-chat/"
@@ -66,6 +65,27 @@ pair_data=load_formatted_answers()
 criteria_list = load_criteria_from_json(json_file)
 criteria_top_list=load_top_criteria()
 
+##评分标准矩阵获取
+cri_matrix=criteria_matrix()
+
+##特征矩阵以及特征向量获取
+cri_vec=sigma(cri_matrix)
+matrix_3d = np.load('matrix.npy')  # 假设文件名为 'matrix.npy'
+
+# 获取三维矩阵的形状
+m, n, _ = matrix_3d.shape  # m 是矩阵层数，n 是每个二维矩阵的维度
+
+# 初始化结果矩阵，存储每个二维矩阵对应的最大特征向量
+eigenvectors_matrix = np.zeros((m, n))  # 结果矩阵形状为 (m, n)
+
+# 对每个二维矩阵计算最大特征值对应的特征向量
+for i in range(m):
+    eigenvectors_matrix[i, :] = sigma(matrix_3d[i])
+
 # Main process
 # rank_criteria_with_llm(criteria_list, system_prompt_rank, model_name, output_file="ranked_criteria.json")
 compare_answers_with_llm(pair_data,criteria_top_list,model_name, output_file="evaluation_under_criteria.npy")
+
+
+
+##特征值获取

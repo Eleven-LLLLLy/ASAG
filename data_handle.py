@@ -273,3 +273,39 @@ def load_top_criteria(input_file='ranked_criteria.json'):
 
     all_criteria=data['Rank_criteria'][:10]
     return all_criteria
+def criteria_matrix():
+    with open('ranked_criteria.json', 'r', encoding='utf-8') as f:
+        data = json.load(f)
+    rank_criteria = data["Rank_criteria"]
+
+    # 取前10个标准
+    top_10_criteria = rank_criteria[:10]
+
+    # 初始化评分矩阵
+    n = len(top_10_criteria)
+    A = np.ones((n, n))  # 初始化为1，因为a=a时评分为1
+
+    # 根据规则填写矩阵
+    for i in range(n):
+        for j in range(n):
+            if i == j:
+                continue  # 自己与自己比较，跳过
+
+            if rank_criteria.index(top_10_criteria[i]) < rank_criteria.index(top_10_criteria[j]):
+                A[i, j] = 3  # a > b
+                A[j, i] = 1 / 3  # 对称的关系
+            elif rank_criteria.index(top_10_criteria[i]) > rank_criteria.index(top_10_criteria[j]):
+                A[i, j] = 1 / 3  # a < b
+                A[j, i] = 3  # 对称的关系
+            else:
+                A[i, j] = 1  # a == b
+                A[j, i] = 1  # 对称的关系
+    return A
+def sigma(matrix):
+    eigenvalues, eigenvectors = np.linalg.eig(matrix)
+
+    # 获取最大特征值对应的索引
+    max_eigenvalue_index = np.argmax(eigenvalues)
+
+    # 返回最大特征值对应的特征向量
+    return eigenvectors[:, max_eigenvalue_index]
