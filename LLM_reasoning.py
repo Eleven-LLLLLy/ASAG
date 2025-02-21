@@ -98,7 +98,7 @@ def compare_answers_with_llm(pair_data,top_criteria, model_name, output_file):
         trust_remote_code=True
     )
     tokenizer = AutoTokenizer.from_pretrained(model_name)
-    n = len(pair_data)
+    n = 10
     k = len(top_criteria)
     A_kij = np.zeros((k, n, n), dtype=int)  # 初始化 A_kij 矩阵
     for k_idx, criterion in enumerate(tqdm(top_criteria, desc="Processing criteria")):
