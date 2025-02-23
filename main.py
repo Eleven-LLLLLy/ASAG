@@ -64,15 +64,15 @@ system_prompt_rank = (
 pair_data=load_formatted_answers()
 criteria_list = load_criteria_from_json(json_file)
 criteria_top_list=load_top_criteria()
-
+real_scores=get_real_scores()
 ##评分标准矩阵获取
 cri_matrix=criteria_matrix()
 
 ##特征矩阵以及特征向量获取
-cri_eigenvectors_matrix=sigma(cri_matrix)
+cri_eigenvectors_matrix=np.real(sigma(cri_matrix))
 normal_cri_eigenvectors_matrix=normalize_vector(cri_eigenvectors_matrix)
 
-matrix_3d = np.load('matrix.npy')  # 假设文件名为 'matrix.npy'
+matrix_3d = np.load('evaluation_under_criteria.npy')  # 假设文件名为 'matrix.npy'
 # 获取三维矩阵的形状
 m, n, _ = matrix_3d.shape  # m 是矩阵层数，n 是每个二维矩阵的维度
 
@@ -86,7 +86,7 @@ for i in range(m):
 # Main process
 # rank_criteria_with_llm(criteria_list, system_prompt_rank, model_name, output_file="ranked_criteria.json")
 compare_answers_with_llm(pair_data,criteria_top_list,model_name, output_file="evaluation_under_criteria.npy")
-final_scores=np.dot(normal_scores_eigenvectors_matrix.T, normal_cri_eigenvectors_matrix)
+final_scores=np.dot(normal_cri_eigenvectors_matrix,normal_scores_eigenvectors_matrix.T)
 print(final_scores)
 
 ##特征值获取

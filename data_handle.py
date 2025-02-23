@@ -210,7 +210,7 @@ import json
 import re
 
 import numpy as np
-
+import pandas as pd
 
 def load_formatted_answers(input_file='formatted_answers.txt'):
     """从文件中读取格式化的答案并返回为列表"""
@@ -293,9 +293,9 @@ def criteria_matrix():
 
             if rank_criteria.index(top_10_criteria[i]) < rank_criteria.index(top_10_criteria[j]):
                 A[i, j] = 3  # a > b
-                A[j, i] = 1 / 3  # 对称的关系
+                A[j, i] = 0.33  # 对称的关系
             elif rank_criteria.index(top_10_criteria[i]) > rank_criteria.index(top_10_criteria[j]):
-                A[i, j] = 1 / 3  # a < b
+                A[i, j] = 0.33  # a < b
                 A[j, i] = 3  # 对称的关系
             else:
                 A[i, j] = 1  # a == b
@@ -313,3 +313,16 @@ def normalize_vector(v):
     total = np.sum(v)  # 计算向量的总和
     normalized_v = v / total  # 每个元素除以总和
     return normalized_v
+def get_real_scores():
+    df = pd.read_csv('paired_sample.csv')
+
+    # 提取第一行和第1到第9行的得分
+    # 假设需要提取的得分在 `Score1` 和 `Score2` 列中
+    # 提取第一行和第1到第9行的得分，组合成一个长度为10的列表
+    scores = [df.loc[0, 'Score1']]  # 第一个得分（第一行的Score1）
+
+    # 追加第1-9行的得分
+    for i in range(0, 9):  # 从第1行到第9行
+        scores.append(df.loc[i, 'Score2'])  # 追加Score1
+
+    return scores
