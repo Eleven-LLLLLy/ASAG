@@ -309,3 +309,7 @@ def sigma(matrix):
 
     # 返回最大特征值对应的特征向量
     return eigenvectors[:, max_eigenvalue_index]
+def normalize_vector(v):
+    total = np.sum(v)  # 计算向量的总和
+    normalized_v = v / total  # 每个元素除以总和
+    return normalized_v
