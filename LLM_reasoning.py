@@ -100,7 +100,7 @@ def compare_answers_with_llm(pair_data,top_criteria, model_name, output_file):
     tokenizer = AutoTokenizer.from_pretrained(model_name)
     n = 10
     k = len(top_criteria)
-    A_kij = np.zeros((k, n, n), dtype=int)  # 初始化 A_kij 矩阵
+    A_kij = np.ones((k, n, n), dtype=float)  # 初始化 A_kij 矩阵
     for k_idx, criterion in enumerate(tqdm(top_criteria, desc="Processing criteria")):
         for i in range(n):
             temp = 0
@@ -135,7 +135,7 @@ def compare_answers_with_llm(pair_data,top_criteria, model_name, output_file):
                     result = int(last_line)
                     print(result)
                     A_kij[k_idx, i, j] = result
-                    A_kij[k_idx, j, i] = -result  # 对称性
+                    A_kij[k_idx, j, i] = 1/result  # 对称性
                 except ValueError:
                     print(
                         f"Unexpected output for criterion '{criterion}' between answers {i} and {j}: {generated_text}")

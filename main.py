@@ -89,4 +89,6 @@ compare_answers_with_llm(pair_data,criteria_top_list,model_name, output_file="ev
 final_scores=np.dot(normal_cri_eigenvectors_matrix,normal_scores_eigenvectors_matrix.T)
 print(final_scores)
 
-##特征值获取
+##一致性指数计算
+CI_result=calculate_consistency_index(final_scores, real_scores)
+print(CI_result)

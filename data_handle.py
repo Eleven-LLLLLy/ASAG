@@ -314,7 +314,7 @@ def normalize_vector(v):
     normalized_v = v / total  # 每个元素除以总和
     return normalized_v
 def get_real_scores():
-    df = pd.read_csv('paired_sample.csv')
+    df = pd.read_csv('paired_samples.csv')
 
     # 提取第一行和第1到第9行的得分
     # 假设需要提取的得分在 `Score1` 和 `Score2` 列中
@@ -326,3 +326,16 @@ def get_real_scores():
         scores.append(df.loc[i, 'Score2'])  # 追加Score1
 
     return scores
+def calculate_consistency_index(final_scores, real_score):
+    n = len(final_scores)
+    consistent_pairs = 0
+    total_comparable_pairs = n * (n - 1) // 2
+
+    for i in range(n):
+        for j in range(i + 1, n):
+            if (final_scores[i] > final_scores[j] and real_score[i] > real_score[j]) or \
+                    (final_scores[i] < final_scores[j] and real_score[i] < real_score[j]):
+                consistent_pairs += 1
+
+    ci = consistent_pairs / total_comparable_pairs if total_comparable_pairs != 0 else 0
+    return ci
